@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <fields>
+        <fullName>Name</fullName>
+        <externalId>false</externalId>
+        <label>Name</label>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Choice_Name__c</fullName>
+        <label>Choice Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>TextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Survey_Question__c</fullName>
+        <label>Survey Question</label>
+        <referenceTo>Survey_Question__c</referenceTo>
+        <relationshipLabel>Survey Questions</relationshipLabel>
+        <relationshipName>Survey_Question_Choices</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <label>Survey Question Choices</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Name</columns>
+        <columns>Choice_Name__c</columns>
+        <columns>Survey_Question__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Survey Question Choices</label>
+    </listViews>
+    <pluralLabel>Survey Question Choices</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Master</fullName>
+        <active>true</active>
+        <label>Master</label>
+    </recordTypes>
+    <searchLayouts>
+        <searchType>Global</searchType>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <sharingReasons>
+        <fullName>Survey_Question_Choice_Reason</fullName>
+        <label>Survey Question Choice Reason</label>
+    </sharingReasons>
+    <tabs>
+        <visibility>DefaultOn</visibility>
+    </tabs>
+    <visibility>Public</visibility>
+    <webLink>
+        <fullName>Survey_Question_Choices</fullName>
+        <availability>online</availability>
+        <displayType>List</displayType>
+        <linkType>List</linkType>
+        <masterLabel>Survey Question Choices</masterLabel>
+        <openType>newWindow</openType>
+    </webLink>
+    <fields>
+        <fullName>SQC__c</fullName>
+        <label>SQC</label>
+        <displayFormat>SQC-{00001}</displayFormat>
+        <startingNumber>1</startingNumber>
+        <type>AutoNumber</type>
+    </fields>
+    <pageLayouts>
+        <fullName>Survey_Question_Choices_layout</fullName>
+        <availableForNew>true</availableForNew>
+        <availableForUpdate>true</availableForUpdate>
+        <label>Survey Question Choices layout</label>
+        <layoutSections>
+            <layoutColumns>1
